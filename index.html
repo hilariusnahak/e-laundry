@@ -4,59 +4,354 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Laundry</title>
-    <!-- Icon -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <!-- External CSS -->
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <!-- favicon -->
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>e-laundry</title>
   </head>
 
   <body>
-    <!-- Navbar Start -->
-    <header class="navbar-container">
-      <div class="brand-nav">
-        <h1 class="title-nav">E-<span>Laundry</span></h1>
-        <a href="#">
-          <img src="assets/image/logo.png" alt="Logo">
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="" class="nav__logo">
+          <img src="assets/image/logo.png" alt=""> E-Laundry
         </a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#home" class="text-uppercase font-poetsen font-bold">Home</a></li>
-          <li><a href="#" class="text-uppercase font-poetsen font-bold">Services</a></li>
-          <li><a href="#" class="text-uppercase font-poetsen font-bold">Pricing List</a></li>
-          <li><a href="#" class="text-uppercase font-poetsen font-bold">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Navbar End -->
 
-    <main class="container">
-      <div class="hero" id="home">
-        <article class="hero-content">
-          <h1>Laundry Cepat, Bersih, dan Praktis.</h1>
-          <p>E-Laundry adalah solusi laundry yang tepat untuk Anda yang sibuk dan menginginkan kemudahan. Kami
-            menawarkan
-            berbagai layanan laundry yang sesuai dengan kebutuhan Anda, termasuk laundry kiloan, laundry sepatu, laundry
-            tas,
-            dan laundry selimut.</p>
-          <div>
-            <a href="" class="button">Lebih lanjut<i class="ri-arrow-down-line"></i></a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About Us</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#service" class="nav__link">Service</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#pricing" class="nav__link">Pricing List</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact Us</a>
+            </li>
+          </ul>
+
+          <!-- Humburger Close Button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
           </div>
-        </article>
-        <div class="image-wrapper">
-          <div>
-            <img src="/assets/image/hero-section.svg" alt="Hero Image" width="1459" height="1459">
+
+          <img src="assets/image/branch-2.png" alt="" class="nav__image-1">
+        </div>
+
+        <div class="nav__buttons">
+          <!-- Theme Button -->
+          <i class="ri-moon-fill change-theme" id="theme-button"></i>
+
+          <!-- Toggel Button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-apps-2-fill"></i>
           </div>
         </div>
-      </div>
-    </main>
-    <!-- Start Footer -->
-    <footer></footer>
-    <!-- End Footer -->
+      </nav>
+    </header>
 
-    <!-- External JavaSript -->
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              Pakaian Anda, <br>
+              Perawatan Kami.
+            </h1>
+
+            <p class="home__description">
+              E-Laundry adalah solusi laundry yang tepat untuk Anda yang sibuk dan menginginkan kemudahan.
+            </p>
+
+            <a href="#" class="button">
+              Pesan
+            </a>
+          </div>
+
+          <img src="assets/img/home-fruits.png" alt="image" class="home__img">
+        </div>
+
+        <img src="assets/image/branch-2.png" alt="image" class="home__branch">
+      </section>
+
+      <!--==================== ABOUT US ====================-->
+      <section class="about section" id="about">
+        <div class="about__container contaner grid">
+          <div class="about__data">
+            <h2 class="section__title">
+              Tentang <br>
+              E-Laundry
+            </h2>
+
+            <p class="about__description">
+              Kami
+              menawarkan berbagai layanan laundry yang sesuai dengan kebutuhan Anda, termasuk laundry kiloan,
+              laundry sepatu, laundry tas, dan laundry selimut.
+            </p>
+
+            <a href="#service" class="button">
+              Know More
+            </a>
+          </div>
+
+          <img src="assets/img/about-fruits.png" alt="image" class="about__img">
+        </div>
+
+        <img src="assets/image/branch-1.png" alt="image" class="about__branch">
+      </section>
+
+      <!--==================== SERVICE ====================-->
+      <section class="service section" id="service">
+        <h2 class="section__title">
+          Our Service
+        </h2>
+
+        <div class="service__container container grid">
+          <article class="service__card">
+            <div class="service__bg"></div>
+
+            <img src="assets/img/enjoy-1.png" alt="image" class="service__img">
+            <h3 class="service__title">Nama Service</h3>
+            <span class="service__subtitle">Subtitle Service</span>
+          </article>
+
+          <article class="service__card">
+            <div class="service__bg"></div>
+
+            <img src="assets/img/enjoy-2.png" alt="image" class="service__img">
+            <h3 class="service__title">Nama Service</h3>
+            <span class="service__subtitle">Subtitle Service</span>
+          </article>
+
+          <article class="service__card">
+            <div class="service__bg"></div>
+
+            <img src="assets/img/enjoy-3.png" alt="image" class="service__img">
+            <h3 class="service__title">Nama Service</h3>
+            <span class="service__subtitle">Subtitle Service</span>
+          </article>
+        </div>
+      </section>
+
+
+      <!--==================== PRICING LIST ====================-->
+      <section class="pricing section" id="pricing">
+        <h2 class="section__title">
+          Pricing List
+        </h2>
+
+        <div class="pricing__container container grid">
+          <article class="pricing__card">
+            <div class="pricing__bg"></div>
+
+            <img src="assets/img/popular-1.png" alt="image" class="pricing__img">
+            <h3 class="pricing__title">Nama Layanan</h3>
+            <span class="pricing__subtitle">Deskripsi</span>
+            <h3 class="pricing__price">Rp Harga</h3>
+
+            <button class="pricing__button button">
+              <i class="ri-send-plane-line"></i>
+            </button>
+          </article>
+
+          <article class="pricing__card">
+            <div class="pricing__bg"></div>
+
+            <img src="assets/image/popular-2.png" alt="image" class="pricing__img">
+            <h3 class="pricing__title">Nama Layanan</h3>
+            <span class="pricing__subtitle">Deskripsi</span>
+            <h3 class="pricing__price">Rp Harga</h3>
+
+            <button class="pricing__button button">
+              <i class="ri-send-plane-line"></i>
+            </button>
+          </article>
+
+          <article class="pricing__card">
+            <div class="pricing__bg"></div>
+
+            <img src="assets/image/popular-3.png" alt="image" class="pricing__img">
+            <h3 class="pricing__title">Nama Layanan</h3>
+            <span class="pricing__subtitle">Deskripsi</span>
+            <h3 class="pricing__price">Rp Harga</h3>
+
+            <button class="pricing__button button">
+              <i class="ri-send-plane-line"></i>
+            </button>
+          </article>
+
+          <article class="pricing__card">
+            <div class="pricing__bg"></div>
+
+            <img src="assets/img/popular-4.png" alt="image" class="pricing__img">
+            <h3 class="pricing__title">Nama Layanan</h3>
+            <span class="pricing__subtitle">Deskripsi</span>
+            <h3 class="pricing__price">Rp Harga</h3>
+
+            <button class="pricing__button button">
+              <i class="ri-send-plane-line"></i>
+            </button>
+          </article>
+
+          <article class="pricing__card">
+            <div class="pricing__bg"></div>
+
+            <img src="assets/img/popular-5.png" alt="image" class="pricing__img">
+            <h3 class="pricing__title">Nama Layanan</h3>
+            <span class="pricing__subtitle">Deskripsi</span>
+            <h3 class="pricing__price">Rp Harga</h3>
+
+            <button class="pricing__button button">
+              <i class="ri-send-plane-line"></i>
+            </button>
+          </article>
+
+          <article class="pricing__card">
+            <div class="pricing__bg"></div>
+
+            <img src="assets/img/popular-6.png" alt="image" class="pricing__img">
+            <h3 class="pricing__title">Nama Layanan</h3>
+            <span class="pricing__subtitle">Deskripsi</span>
+            <h3 class="pricing__price">Rp Harga</h3>
+
+            <button class="pricing__button button">
+              <i class="ri-send-plane-line"></i>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== CONTACT US ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__content grid">
+            <div class="contact__data">
+              <h2 class="section__title">
+                Receive The <br>
+                Best Laundry
+              </h2>
+
+              <p class="contact__description">
+                Dapatkan informasi lebih lanjut dengan menghubungi kami
+              </p>
+            </div>
+
+            <form action="" class="contact__form">
+              <input type="text" placeholder="Masukan pesan Anda" class="contact__input">
+
+              <button class="contact__button button">
+                Kirim
+              </button>
+            </form>
+
+            <img src="assets/image/join-bg.png" alt="image" class="contact__bg">
+          </div>
+
+          <img src="assets/image/leaf.png" alt="image" class="contact__leaf-1">
+          <img src="assets/image/leaf.png" alt="image" class="contact__leaf-2">
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div>
+          <a href="#" class="footer__logo">
+            <img src="assets/image/logo.png" alt="image logo"> E-Laundry
+          </a>
+
+          <p class="footer__description">
+            Healthy Body, choose <br>
+            the best laundry.
+          </p>
+        </div>
+
+        <div class="footer__data grid">
+          <div>
+            <h3 class="footer__title">Company</h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link">Home</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">About Us</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Alamat</h3>
+
+            <ul class="footer__links">
+              <li class="footer__info">
+                Jl. adasdba, damds, no. 422 <br>
+                sandasdn, 3131, Yogyakarta
+              </li>
+              <li class="footer__info">
+                08.00pm - 17.00pm WIB
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Media Sosial</h3>
+
+            <div class="footer__social">
+              <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                <i class="ri-facebook-circle-line"></i>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                <i class="ri-instagram-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a src="assets/image/branch-1.png" alt="image" class="footer__branch-1">
+          <img src="assets/image/branch-2.png" alt="image" class="footer__branch-2">
+      </div>
+
+      <span class="footer__copy">
+        &#169; All Rights Reserved By Informatika UJB
+      </span>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-skip-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
     <script src="assets/js/app.js"></script>
   </body>
 
