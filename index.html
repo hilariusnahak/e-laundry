@@ -255,12 +255,16 @@
               </p>
             </div>
 
-            <form action="" class="contact__form">
-              <input type="text" placeholder="Masukan pesan Anda" class="contact__input">
+            <!-- Change -->
+            <form class="contact__form" onsubmit="sendMsgToWa()">
+              <label for="name" class="contact__input">Nama</label>
+              <input type="text" name="name" id="nama">
+              <span class="error" aria-live="polite"></span>
 
-              <button class="contact__button button">
-                Kirim
-              </button>
+              <label for="comment" class="contact__input">Pesan</label>
+              <textarea name="comment" id="comment"></textarea>
+
+              <button type="submit" class="send__btn button">Kirim</button>
             </form>
 
             <img src="assets/image/join-bg.png" alt="image" class="contact__bg">

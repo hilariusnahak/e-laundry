@@ -554,26 +554,79 @@ body.dark-theme {
 }
 
 .contact__form {
- display: grid;
- row-gap: .75rem;
+ /* display: grid;
+ row-gap: .75rem; */
+ max-width: 600px;
+ margin: 0 auto;
+ padding: 1.25rem;
+ background-color: #fff;
+ border-radius: .5rem;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact__input {
+input[type="text"],
+textarea {
+ width: 100%;
+ padding: 10px;
+ margin: 5px 0;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ box-sizing: border-box;
+ font-size: 16px;
+}
+
+textarea {
+ resize: vertical;
+}
+
+input:focus:invalid {
+ outline: none;
+}
+
+/* .error {
+ width: 100%;
+ padding: 0;
+
+ font-size: 80%;
+ color: white;
+ background-color: #900;
+ border-radius: 0 0 5px 5px;
+ box-sizing: border-box;
+}
+
+.error.active {
+ padding: 0.3em;
+} */
+
+
+.send__btn {
+ width: 66px;
+ height: 36px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ cursor: pointer;
+}
+
+
+
+/* .contact__input {
  width: 100%;
  padding: 1rem;
  border-radius: 4rem;
  background-color: var(--body-color);
  color: var(--title-color);
  transition: background-color .4s;
-}
+} */
 
 .contact__input::placeholder {
  color: var(--text-color);
 }
 
-.contact__button {
+/* .contact__button {
  cursor: pointer;
-}
+} */
 
 .contact__leaf-1,
 .contact__leaf-2 {
@@ -779,7 +832,6 @@ body.dark-theme {
  .contact__form {
   background-color: var(--body-color);
   padding: .5rem;
-  border-radius: 4rem;
   grid-template-columns: 1fr max-content;
   transition: background-color .4s;
  }
@@ -815,10 +867,11 @@ body.dark-theme {
   grid-template-columns: repeat(2, 250px);
  }
 
- .contact__form {
+
+ /* .contact__form {
   width: 600px;
   justify-self: center;
- }
+ } */
 
  .footer__data {
   grid-template-columns: repeat(4, max-content);
