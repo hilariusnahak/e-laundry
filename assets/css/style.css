@@ -646,6 +646,32 @@ input:focus:invalid {
  rotate: 15deg;
 }
 
+/*=============== MAPS ===============*/
+.map__container {
+ position: relative;
+ padding-bottom: 4rem;
+
+}
+
+.map__content {
+ position: relative;
+ padding: .5rem 1.5rem;
+ row-gap: 2rem;
+ border-radius: 1rem;
+ overflow: hidden;
+}
+
+.map__data {
+ z-index: 6;
+ height: 100vh;
+}
+
+#map {
+ height: 90%;
+ width: 100%;
+ margin: 0 auto;
+}
+
 /*=============== FOOTER ===============*/
 .footer {
  padding-block: 3rem 2rem;
@@ -840,6 +866,17 @@ input:focus:invalid {
   padding: 1.25rem 1rem;
  }
 
+ .map__data {
+  z-index: 6;
+  height: 100vh;
+ }
+
+ #map {
+  height: 76%;
+  width: 100%;
+  margin: 0 auto;
+ }
+
  .footer__data {
   grid-template-columns: repeat(3, max-content);
  }
@@ -872,6 +909,17 @@ input:focus:invalid {
   width: 600px;
   justify-self: center;
  } */
+
+ .map__data {
+  z-index: 6;
+  height: 100vh;
+ }
+
+ #map {
+  height: 76%;
+  width: 100%;
+  margin: 0 auto;
+ }
 
  .footer__data {
   grid-template-columns: repeat(4, max-content);
@@ -1020,6 +1068,17 @@ input:focus:invalid {
 
  .contact__leaf-2 {
   right: 6rem;
+ }
+
+ .map__data {
+  z-index: 6;
+  height: 100vh;
+ }
+
+ #map {
+  height: 80%;
+  width: 80%;
+  margin: 0 auto;
  }
 
  .footer {

@@ -274,6 +274,20 @@
           <img src="assets/image/leaf.png" alt="image" class="contact__leaf-2">
         </div>
       </section>
+
+      <!-- MAPS -->
+      <section class="map section">
+        <div class="map__container container grid">
+          <div class="map__content grid">
+            <div class="map__data">
+              <h2 class="section__title">
+                Find Location E-Laundry
+              </h2>
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
@@ -350,6 +364,13 @@
     <a href="#" class="scrollup" id="scroll-up">
       <i class="ri-skip-up-line"></i>
     </a>
+
+    <!--  Maps JavaScript API -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <!-- prettier-ignore -->
+    <script>( g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[ c ] || ( b[ c ] = {} ); var d = b.maps || ( b.maps = {} ), r = new Set, e = new URLSearchParams, u = () => h || ( h = new Promise( async ( f, n ) => { await ( a = m.createElement( "script" ) ); e.set( "libraries", [ ...r ] + "" ); for ( k in g ) e.set( k.replace( /[A-Z]/g, t => "_" + t[ 0 ].toLowerCase() ), g[ k ] ); e.set( "callback", c + ".maps." + q ); a.src = `https://maps.${ c }apis.com/maps/api/js?` + e; d[ q ] = f; a.onerror = () => h = n( Error( p + " could not load." ) ); a.nonce = m.querySelector( "script[nonce]" )?.nonce || ""; m.head.append( a ) } ) ); d[ l ] ? console.warn( p + " only loads once. Ignoring:", g ) : d[ l ] = ( f, ...n ) => r.add( f ) && u().then( () => d[ l ]( f, ...n ) ) } )
+        ( { key: "AIzaSyA3zPaFLqcjAwEc0JlyAVIN09pqyNw8U80", v: "weekly" } );</script>
 
     <!--=============== SCROLLREVEAL ===============-->
     <script src="assets/js/scrollreveal.min.js"></script>
